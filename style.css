@@ -1,0 +1,162 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* My styles */
+
+html {
+  background-color: hsl(217, 54%, 11%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  margin: 0;
+}
+
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 3vh;
+  box-shadow: 0 2rem 0.5rem 1rem hsla(0, 0%, 0%, 0.1), 0 2rem 0.5rem 3rem hsla(0, 0%, 0%, 0.05);
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1.5rem;
+  width: 325px;
+}
+
+.card__images-link {
+  aspect-ratio: 1;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: cover;
+  border-radius: 1vh;
+  display: inline-block;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card__images-link__hover-img-container {
+  align-items: center;
+  /* So one thing that is really interesting is that display flex sets align items by default to stretch so if we do change that the image will strech to the whole size of the container */
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 3vh;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.card__images-link:hover .card__images-link__hover-img-container,
+.card__images-link:focus .card__images-link__hover-img-container,
+.card__images-link:active .card__images-link__hover-img-container {
+  visibility: visible;
+}
+
+h1 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+h1 a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+h1 a:hover,
+h1 a:focus,
+h1 a:active {
+  color: hsl(178, 100%, 50%);
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+}
+
+.card>p {
+  line-height: 1.6rem;
+  margin: 1rem 0;
+}
+
+.card__price-time-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.card__price,
+.card__time {
+  align-items: center;
+  display: flex;
+}
+
+.card__price p,
+.card__time p {
+  display: inline;
+  margin: 0;
+  margin-left: 0.5rem;
+}
+
+.card__price p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+hr {
+  border-style: none;
+  height: 1px;
+  background-color: hsl(215, 32%, 27%);
+}
+
+.card__user {
+  align-items: center;
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+
+.card__user img {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50vh;
+  height: 2rem;
+  width: 2rem;
+}
+
+.card__user p {
+  margin: 0;
+  margin-left: 0.7rem;
+}
+
+.card__user__link {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.card__user__link:hover,
+.card__user__link:focus,
+.card__user__link:active {
+  color: hsl(178, 100%, 50%);
+}
+
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+
+@media (min-width: 376px) {
+  html {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 351px;
+  }
+}
